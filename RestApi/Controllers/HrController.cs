@@ -27,9 +27,9 @@ namespace RestApi.Controllers
 		}
 
 		[HttpPost("candidates")]
-		public void AddCadidateDb(EInternalSystem system)
+		public void AddCandidates(EInternalSystem system)
 		{
-			ApiRequests.AddCadidateDb(_dbContext, system);
+			ApiRequests.AddCandidatesFromSystem(_dbContext, system);
 		}
 
 		[HttpPut("candidate")]

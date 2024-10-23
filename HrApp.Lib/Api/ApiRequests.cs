@@ -41,7 +41,7 @@ namespace HrApp.Lib.Api
 
 		public static List<CandidateModel> GetCandidates(ApplicationContext dbContext) => dbContext.Candidates.ToList();
 
-		public static void AddCadidateDb(ApplicationContext dbContext, EInternalSystem system)
+		public static void AddCandidatesFromSystem(ApplicationContext dbContext, EInternalSystem system)
 		{
 			IInternalSystem internalSystem = null;
 
